@@ -1,0 +1,323 @@
+/* .Home .lander {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.Home .lander h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.Home .lander p {
+  color: #999;
+} */
+
+/* Hero */
+/* * {
+  font-family: 'PT Sans', sans-serif;
+} */
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      135deg,
+      rgba(12, 5, 29, 0.9) 0%,
+      rgba(72, 56, 149, 0.1) 100%
+    ),
+    url('../../../assets/images/concert4.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 4.7rem;
+  background: url('../../../assets/images/wave-small.png') center no-repeat;
+  background-size: cover;
+}
+
+.mainMessage {
+  width: 100%;
+  max-width: 50rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  transform: translateY(20%);
+}
+
+.mainMessage h3 {
+  font-size: 1.6rem;
+}
+
+.mainMessage h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.mainMessage p {
+  text-transform: lowercase;
+}
+
+.landingButton {
+  background-color: #eb648c;
+  border-radius: 2rem;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background-color 650ms;
+}
+
+.landingButton:hover {
+  background-color: #ce587b;
+}
+
+/* Explore by city */
+
+.exporeCity {
+  padding: 0;
+}
+
+.titleHeading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.titleHeading h3 {
+  font-size: 1.4rem;
+}
+
+.titleHeading h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.titleHeading p {
+  text-transform: lowercase;
+}
+
+.activitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 0.75rem;
+}
+
+.activitiesGridItem {
+  height: 40rem;
+  padding: 5rem;
+  color: #fafafa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.activitiesGridItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    135deg,
+    rgba(12, 5, 29, 0.9) 0%,
+    rgba(72, 56, 149, 0.8) 100%
+  );
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.enhanceTravel {
+  background-image: url('../../../assets/images/travel.jpg');
+  background-size: cover;
+}
+
+.findArtists {
+  background-image: url('../../../assets/images/listen.jpg');
+  background-size: cover;
+}
+
+.bestShows {
+  background-image: url('../../../assets/images/purple-show.jpg');
+  background-size: cover;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #eb648c;
+  margin-bottom: 1rem;
+}
+
+.activitiesGridItem h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  letter-spacing: 0.2rem;
+}
+
+.testimonials {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      135deg,
+      rgba(12, 5, 29, 0.9) 0%,
+      rgba(72, 56, 149, 0.1) 100%
+    ),
+    url('../../../assets/images/concert3.jpg') center no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 4.7rem;
+  background: url('../../../assets/images/wave-small-reversed.png') center
+    no-repeat;
+  background-size: cover;
+}
+
+.testimonial {
+  width: 100%;
+  color: #fafafa;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.testimonialTextBox {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimonialTextBox quote {
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: #eb648c;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.testimonialCustomer img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 3px solid #eb648c;
+}
+
+/* adventures */
+
+.adventureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.adventureGrid p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  padding: 2.5rem 0;
+  background-color: #d7d4ed;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 350px) {
+  .mainMessage {
+    transform: translateY(40%);
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .hero::before {
+    height: 9.4rem;
+    background: url('../../../assets/images/wave-medium.png');
+    bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .hero::before {
+    height: 9.4rem;
+    background: url('../../../assets/images/wave-medium.png');
+    background-size: cover;
+  }
+
+  .testimonials::before {
+    height: 9.4rem;
+    background: url('../../../assets/images/wave-medium-reversed.png');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* TODO: change navbar styling */
+  header {
+    height: 8rem;
+  }
+
+  .navBrand {
+    width: 3.5rem;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .mainMessage {
+    transform: translateY(70%);
+  }
+
+  .titleHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hero::before {
+    height: 22.7rem;
+    background: url('../../../assets/images/wave-large.png');
+    background-size: cover;
+  }
+
+  .testimonials::before {
+    height: 22.7rem;
+    background: url('../../../assets/images/wave-large-reversed.png');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 75vh;
+  }
+}

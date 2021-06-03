@@ -1,0 +1,54 @@
+.player-header {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  height: 100%;
+}
+
+.event-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  width: 100%;
+  background-color: rgb(23, 29, 29);
+  color: whitesmoke;
+  padding: 1em 2em;
+}
+
+.nav-btn {
+  height: 2rem;
+  width: 5rem;
+  background-color: rgb(25, 99, 104);
+  /* border: 1px whitesmoke; */
+  border-radius: 0.5rem;
+  color: whitesmoke;
+}
+
+.player-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(23, 23, 105);
+  color: whitesmoke;
+  /* height: 100%; */
+  width: 100%;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
